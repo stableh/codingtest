@@ -4,19 +4,22 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
-
-        int N = sc.nextInt();
-        String st = sc.next();
-
-        char[] list = st.toCharArray();
         
-        int sum = 0;
-        for (char a : list) {
-            sum += Integer.parseInt(String.valueOf(a));
-        }
+        String s = sc.next();
+        System.out.println(s);
 
-        System.out.println(sum);
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        int b = Integer.parseInt(br.readLine());
+        String s2 = String.valueOf(b);
+
+        bw.write(s2);
+        
+        //출ㄹ3
+        bw.flush();
         
         
     }
 }
+
